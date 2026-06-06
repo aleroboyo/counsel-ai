@@ -1,4 +1,4 @@
-import {ClerkProvider} from "@clerk/nextjs";
+
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
@@ -44,9 +44,7 @@ export default function RootLayout({
       className={`${playfair.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#0F172A] text-[#F8FAFC]">
-        <ClerkProvider>
           {children}
-        </ClerkProvider>
       </body>
 
     </html>
