@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-const NavBar = () => {
+const Footer = () => {
 
   return (
     <section className="font-inter text-[#94A3B8] flex items-center justify-between py-4 px-20 border border-[#D4A017]/10">
@@ -26,17 +26,19 @@ const NavBar = () => {
           <button>How it works</button>
         </Link>
         <a href='mailto:aleroboyo0@gmail.com' className="hover:text-[#D4A017]">
-          <button>Help</button>
+          <button>Contact</button>
         </a>
-        <Link href='/sign-in' className="text-[#D4A017] border border-[#D4A017] rounded-2xl px-8 py-4 font-medium hover:bg-[#D4A017] hover:text-[#1E293B]">
+        <Link href='/sign-in' className="hover:text-[#D4A017]">
           <button>Sign in</button>
         </Link>
-        <Link href='/sign-up' className="rounded-2xl bg-[#D4A017] px-8 py-4 text-[#1E293B] font-medium hover:bg-[#0F172A] hover:text-[#D4A017] hover:border hover:border-[#D4A017]">
-          <button>Get started </button>
+        <Link href='/sign-up' className="hover:text-[#D4A017]">
+          <button>Sign up </button>
         </Link>
       </nav>
+
+      <div>2026 ©</div>
     </section>
   )
 }
 
-export default NavBar  
+export default Footer

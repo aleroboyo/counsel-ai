@@ -32,13 +32,13 @@ const Features = ({ onContinue }: Steps) => {
             threshold={0.1}
             delay={index * 0.1}
           >
-            <div className="flex md:flex-col gap-2 md:px-6 md:py-10 md:h-60 md:bg-[#94A3B8]/10 md:rounded-xl md:border md:border-[#94A3B8]/10">
+            <div className="flex md:flex-col gap-2 lg:gap-8 md:px-6 md:py-10 md:h-60 md:bg-[#94A3B8]/10 md:rounded-xl md:border md:border-[#94A3B8]/10">
 
               <div className="w-10 h-10 rounded-xl bg-[#D4A017]/10 flex items-center justify-center text-[#D4A017]">
                 {feature.icon && <feature.icon size={20} />}
               </div>
 
-              <div className="flex flex-col">
+              <div className="flex flex-col lg:gap-2">
                 <h2 className="md:font-playfair">
                   {feature.label}
                 </h2>
@@ -59,7 +59,7 @@ const Features = ({ onContinue }: Steps) => {
 
       <button
         onClick={onContinue}
-        className="self-center mt-16 text-xl rounded-2xl bg-[#D4A017] px-8 py-4 text-[#1E293B] flex items-center justify-center"
+        className="lg:hidden self-center mt-16 text-xl rounded-2xl bg-[#D4A017] px-8 py-4 text-[#1E293B] flex items-center justify-center"
       >
         Continue
       </button>
